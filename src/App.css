@@ -1,4 +1,71 @@
+:root {
+  font-size: 62.5%;
+}
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "a a a a "
+    "b b b b "
+    "c c c d"
+    "c c c d"
+    "c c c d";
+    min-width: 25rem;
+    text-align: center;
+  font-size: 1.6rem;
+
 }
 
+.title{
+  border: solid;
+  text-align: center;
+  grid-area: a;
+}
+
+.top-movie{
+  border: solid;
+  grid-area: b;
+  text-align: center;
+
+}
+
+.side-movie{
+  border: solid;
+  grid-area: d;
+}
+
+.main-movie{
+  border: solid;
+  grid-area: c;
+  text-align: center;
+
+}
+
+.top-movie-img{
+  width: 100%;
+  max-width: 7rem;
+  height: auto;
+}
+
+.side-movie-img{
+  width: 100%;
+  max-width: 5rem;
+  height: auto;
+
+}
+
+.main-movie-img{
+  width: 100%;
+  max-width: 14rem;
+  height: auto;
+
+}
+
+button{
+  outline: none;
+  border: none;
+  background: none;
+}
+button:active{
+  transform: translateY(0.1rem);
+}
