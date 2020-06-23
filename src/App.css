@@ -32,6 +32,7 @@
 .side-movie{
   border: solid;
   grid-area: d;
+
 }
 
 .main-movie{
@@ -65,7 +66,13 @@ button{
   outline: none;
   border: none;
   background: none;
+  
 }
 button:active{
   transform: translateY(0.1rem);
+}
+
+.rating{
+  border: solid;
+  
 }
